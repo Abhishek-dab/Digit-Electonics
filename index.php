@@ -1,3 +1,6 @@
+<?php
+include("connection.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,8 +16,8 @@
 	<script type="text/javascript" src="js/bootstrap.js"></script>
     <div class="container-fluid">
     <div class="container-fluid" style="background-color: grey;color: white;">
-		<div class="container">
-        <p class="pull-right"> E-mail : cs@digitelec.com</p>
+		<div class="container"><br>
+        <p class="pull-right"> E-mail : cs@digitelec.com</p><br>
         </div>
         </div>
 		<div class="container">
@@ -45,47 +48,50 @@
         </div>
 
         <div class="container">
-				<div class="col-sm-2" style="background-color: grey;color: white">
+				<div class="col-sm-2" style="background-color: grey;color: black">
 					<h1 align="center">Brands</h1><br>
-                      <center>  <p><a href="dell.php" style="color: white">Dell</a></p><br>
-                         <p><a href="dell.php" style="color: white">HP</a></p><br>
+                      <center>  <p><a href="dell.php" style="color: white">Apple</a></p><br>
+                         <p><a href="dell.php" style="color: white">OnePlus</a></p><br>
                           <p><a href="dell.php" style="color: white">Samsung</a></p><br>
-                          <p><a href="dell.php" style="color: white">Canon</a></p></center>
+                          <p><a href="dell.php" style="color: white">Xiaomi</a></p></center>
 
 					<h1 align="center">Category</h1> <br>
-                         <center>  <p><a href="dell.php" style="color: white">Laptop</a></p><br>
-                         <p><a href="dell.php" style="color: white">Mobile</a></p><br>
-                          <p><a href="dell.php" style="color: white">Camara</a></p><br>
-                          <p><a href="tv.php" style="color: white">T.V</a></p><br></center>
+                         <center>  <p><a href="dell.php" style="color: white">Laptops</a></p><br>
+                         <p><a href="dell.php" style="color: white">Mobile Phones</a></p><br>
+                          <p><a href="dell.php" style="color: white">Watches</a></p><br>
+                          <p><a href="tv.php" style="color: white">Televisions</a></p><br></center><br><br>
 				</div>
 
                 <div class="col-sm-10"><br>
-				<div class="col-sm-4"><center><img src='img/a1.png' width='150px' height='150px'></center><br>
-				<center><a href="b.php" class="btn btn-primary">Buy Now</a></center>
-				</div>
-				<div class="col-sm-4"><center><img src='img/b.jpg' width='150px' height='150px'></center><br>
-				<center><a href="b.php" class="btn btn-primary">Buy Now</a></center></div>
-				<div class="col-sm-4"><center><img src='img/c.jpg' width='150px' height='150px'></center><br>
-				<center><a href="b.php" class="btn btn-primary">Buy Now</a></center></div>
-<br><br>.
-				<div class="col-sm-4"><center><img src='img/d.png' width='150px' height='150px'></center><br>
-				<center><a href="b.php" class="btn btn-primary">Buy Now</a></center></div>
-				<div class="col-sm-4"><center><img src='img/e.jpg' width='150px' height='150px'></center><br>
-				<center><a href="b.php" class="btn btn-primary">Buy Now</a></center></div>
-				<div class="col-sm-4"><center><img src='img/f.jpg' width='125px' height='125px'></center><br>
-				<center><a href="b.php" class="btn btn-primary">Buy Now</a></center></div>
-<br><br>.
-				<div class="col-sm-4"><center><img src='img/g.jpg' width='150px' height='150px'></center><br>
-				<center><a href="b.php" class="btn btn-primary">Buy Now</a></center></div>
-				<div class="col-sm-4"><center><img src='img/h.jpg' width='150px' height='150px'></center><br>
-				<center><a href="b.php" class="btn btn-primary">Buy Now</a></center></div>
-				<div class="col-sm-4"><center><img src='img/a1.png' width='150px' height='150px'></center><br>
-				<center><a href="b.php" class="btn btn-primary">Buy Now</a></center></div>
+				<?php
+                            $q="select * from product limit 0,6";
+                            $run=mysqli_query($link,$q);
+                            while($row=mysqli_fetch_array($run))
+                            {
+                          
+                            	$id=$row['id'];
+                            	$name=$row['name'];
+                            	$img=$row['img'];
+                            	$brand=$row['brand'];
+                         ?>
+                           
+					<div class="col-sm-4"><center><?php echo "<img src='admin/c/$img' width='150px' height='150px'>"; ?></center>
+						<h4 align="center"><?php echo $brand; ?></h4>
+						<h5 align="center"><?php echo $name; ?></h5>
+						<center><a href="b.php?id=<?php echo $id; ?>" class="btn btn-primary">Buy Now</a></center>
+					</div>
+					<?php
+                    }
+
+					?>
+					
+					
 				</div>
                 </div> 
-				<br><br>
+				<br>
 				<div class="container" style="background-color: red;color: white">
 			<h2 align="center">© Copyright 2021 DigitElectronics</h2>
-				</div>
+			</div>
+	</div>
 </body>
 </html>

@@ -62,7 +62,7 @@ include("connection.php");
                          	<option>Laptops</option>
                          	<option>Televisions</option>
                          	<option>Mobile Phones</option>
-                         		<option>Cameras</option>
+                         		<option>Watches</option>
                          </select>
                       	</td>
                       </tr>
@@ -70,10 +70,10 @@ include("connection.php");
                       	<td>Brand</td>
                       	<td>
                       		 <select name="brand">
-                         	<option>Dell</option>
-                         	<option>HP</option>
+                         	<option>Apple</option>
+                         	<option>OnePlus</option>
                          	<option>Samsung</option>
-                         		<option>Cannon</option>
+                         		<option>Xiaomi</option>
                          </select>
                       	</td>
                       </tr>
