@@ -50,15 +50,15 @@ include("connection.php");
         <div class="container">
 				<div class="col-sm-2" style="background-color: grey;color: black">
 					<h1 align="center">Brands</h1><br>
-                      <center>  <p><a href="dell.php" style="color: white">Apple</a></p><br>
-                         <p><a href="dell.php" style="color: white">OnePlus</a></p><br>
-                          <p><a href="dell.php" style="color: white">Samsung</a></p><br>
-                          <p><a href="dell.php" style="color: white">Xiaomi</a></p></center>
+                      <center>  <p><a href="apple.php" style="color: white">Apple</a></p><br>
+                         <p><a href="oneplus.php" style="color: white">OnePlus</a></p><br>
+                          <p><a href="samsung.php" style="color: white">Samsung</a></p><br>
+                          <p><a href="xiaomi.php" style="color: white">Xiaomi</a></p></center>
 
 					<h1 align="center">Category</h1> <br>
-                         <center>  <p><a href="dell.php" style="color: white">Laptops</a></p><br>
-                         <p><a href="dell.php" style="color: white">Mobile Phones</a></p><br>
-                          <p><a href="dell.php" style="color: white">Watches</a></p><br>
+                         <center>  <p><a href="laptops.php" style="color: white">Laptops</a></p><br>
+                         <p><a href="phones.php" style="color: white">Mobile Phones</a></p><br>
+                          <p><a href="watches.php" style="color: white">Watches</a></p><br>
                           <p><a href="tv.php" style="color: white">Televisions</a></p><br></center><br><br>
 				</div>
 
