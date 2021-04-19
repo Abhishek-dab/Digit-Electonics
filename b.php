@@ -73,12 +73,15 @@ include("connection.php");
                             	$name=$row['name'];
                             	$img=$row['img'];
                             	$brand=$row['brand'];
+                                $cat=$row['cat'];
+                                $price=$row['price'];
                          ?>
                            <br>
 					<div class="col-sm-4"><center><?php echo "<img src='admin/c/$img' width='150px' height='150px'>"; ?></center>
-						<h4 align="center"><?php echo $brand; ?></h4>
-						<h5 align="center"><?php echo $name; ?></h5>
-						<center><a href="b.php?id=<?php echo $id; ?>" class="btn btn-primary">Buy Now</a></center><br>
+                    <h4 align="center">Brand :<?php echo $brand; ?></h4>
+						<h4 align="center">Product :<?php echo $name; ?></h4>
+                        <h4 align="center">Price : ₹ <?php echo $price; ?>.00</h4><br>
+                        
 					</div>
                    
                     <form action="" method="post">
@@ -114,7 +117,26 @@ include("connection.php");
 						</tr>
 					</table>
 					</form>
-					
+					<?php
+                 if(isset($_POST['sub']))
+                 {
+                 	  $n1=$_POST['n1'];
+                      $add1=$_POST['add1'];
+                      $city=$_POST['city'];
+                      $state=$_POST['state'];
+                      $mno=$_POST['mno'];
+                 	  $pin=$_POST['pin'];
+
+                 	if(mysqli_query($link,"insert into sell(pname,brand,cat,price,name,add1,city,state,mno,pin) values('$name','$brand','$cat','$price','$n1','$add1','$city','$state','$mno','$pin')"))
+                 	{
+                 		echo "<script>alert('Data Save')</script>";
+                 	}
+                 	else
+                 	{
+                 		echo "<script>alert('Data Not Save')</script>";
+                 	}
+                 }
+				?>
 					
 				</div>
                 </div> 
