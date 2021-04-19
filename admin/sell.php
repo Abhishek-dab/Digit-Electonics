@@ -37,7 +37,7 @@ include("connection.php");
 								    <ul class="nav navbar-nav">
 								<li><a href="ahome.php" class="active"><font color="white">Home</font></a></li>
 								<li><a href="product.php"><font color="white">Product</font></a></li>
-								<li><a href="sell.php"><font color="white">Sell</font></a></li>
+								<li><a href="sell.php"><font color="white">Orders List</font></a></li>
 								<li><a href="index.php"><font color="white">Log Out</a></font></li>
 								</ul>
 								<div>
@@ -49,7 +49,54 @@ include("connection.php");
 
         <div class="container">
         <h1>Order List</h1><br><br>
-        
+        <table class="table">
+                 <tr>
+                     <td>Product Name</td>
+
+                      <td>Brand</td>
+                       <td>Category</td>
+                        <td>Price</td>
+                         <td>Customer's Name</td>
+                          <td>Address</td>
+                           <td>City</td>
+                           <td>state</td>
+                            <td>Pin Code</td>
+							<td>Mobile Number</td>
+                 </tr>
+                 <?php
+                  $q="select * from sell";
+                  $run=mysqli_query($link,$q);
+                  while($row=mysqli_fetch_array($run))
+                  {
+
+                       $pname=$row['pname'];
+                       $brand=$row['brand'];
+                       $cat=$row['cat'];
+                       $price=$row['price'];
+                       $name=$row['name'];
+                       $add1=$row['add1'];
+                       $city=$row['city'];
+                       $state=$row['state'];
+                       $mno=$row['mno'];
+                       $pin=$row['pin'];
+
+                  ?>
+                  <tr>
+                  	<td><?php echo $pname; ?></td>
+                  	<td><?php echo $brand; ?></td>
+                  	<td><?php echo $cat; ?></td>
+                  	<td><?php echo $price; ?></td>
+                  	<td><?php echo $name; ?></td>
+                  	<td><?php echo $add1; ?></td>
+                  	<td><?php echo $city; ?></td>
+                  	<td><?php echo $state; ?></td>
+					<td><?php echo $pin; ?></td>
+                  	<td><?php echo $mno; ?></td>
+                  
+                  <?php
+                  }
+                 ?>
+				</table>
 				
                 </div> 
 				<br><br>

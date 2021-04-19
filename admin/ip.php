@@ -37,7 +37,7 @@ include("connection.php");
 								    <ul class="nav navbar-nav">
 								<li><a href="ahome.php" class="active"><font color="white">Home</font></a></li>
 								<li><a href="product.php"><font color="white">Product</font></a></li>
-								<li><a href="sell.php"><font color="white">Sell</font></a></li>
+								<li><a href="sell.php"><font color="white">Orders List</font></a></li>
 								<li><a href="index.php"><font color="white">Log Out</a></font></li>
 								</ul>
 								<div>
