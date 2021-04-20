@@ -40,6 +40,7 @@ include("connection.php");
 								<li><a href="aboutus.php"><font color="white">About Us</font></a></li>
 								<li><a href="contact.php"><font color="white">Contact Us</font></a></li>
 								<li><a href="reviews.php"><font color="white">Reviews</a></font></li>
+								<li><a href="reviews.php"><font color="white">Deals of the week</a></font></li>
 								</ul>
 								<div>
 								</nav>

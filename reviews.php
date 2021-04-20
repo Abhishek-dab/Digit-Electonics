@@ -9,7 +9,8 @@ include("connection.php");
 	
     <link rel="stylesheet" href="css/style.css">
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 	
@@ -57,14 +58,34 @@ include("connection.php");
         <div class="content">
             <div class="testimonialBx">
                 <p>Praveen did an excellent creative job, addressing our request quickly, and also providing his own graphic insight, being open to feedback and changes or edits when they arose. He worked with us the entire way. Highly recommended.</p>
+                <br><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
                 <h3>Richard Wilson<br>Creative Designer</h3>
             </div>
             <div class="testimonialBx">
-                <p>I've been Searching for a good Portfolio Website done on html & css. This is definitely the one simple about myself with Responsive Design.  Thanks Praveen</p><h3>Joyce K<br>Web Designer (google)</h3>
+                <p>I've been Searching for a good Portfolio Website done on html & css. This is definitely the one simple about myself with Responsive Design.  Thanks Praveen</p> 
+                <br><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<h3>Joyce K<br>Web Designer (google)</h3>
+                
+                
             </div>
             <div class="testimonialBx">
-                <p>I've been Searching for a good Portfolio Website done on html & css. This is definitely the one simple about myself with Responsive Design.  Thanks Praveen</p><h3>Joyce K<br>Web Designer (google)</h3>
+                <p>I've been Searching for a good Portfolio Website done on html & css. This is definitely the one simple about myself with Responsive Design.  Thanks Praveen</p>
+                <br><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+                <h3>Joyce K<br>Web Designer (google)</h3>
             </div>
+            
         </div>
     </section>
 

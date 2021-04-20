@@ -9,7 +9,7 @@ include("connection.php");
 	<title>Digit Electronics</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
-	
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -49,19 +49,19 @@ include("connection.php");
 
         <div class="container">
         <h1>Order List</h1><br><br>
-        <table class="table">
+        <table class="table" id="customers">
                  <tr>
-                     <td>Product Name</td>
+                     <th>Product Name</th>
 
-                      <td>Brand</td>
-                       <td>Category</td>
-                        <td>Price</td>
-                         <td>Customer's Name</td>
-                          <td>Address</td>
-                           <td>City</td>
-                           <td>state</td>
-                            <td>Pin Code</td>
-							<td>Mobile Number</td>
+                      <th>Brand</th>
+                       <th>Category</th>
+                        <th>Price</th>
+                         <th>Customer's Name</th>
+                          <th>Address</th>
+                           <th>City</th>
+                           <th>state</th>
+                            <th>Pin Code</th>
+							<th>Mobile Number</th>
                  </tr>
                  <?php
                   $q="select * from sell";

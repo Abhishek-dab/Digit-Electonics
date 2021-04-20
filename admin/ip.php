@@ -5,11 +5,11 @@ include("connection.php");
 <html>
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="widtd=device-widtd" />
 	<title>Digit Electronics</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
-	
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -49,8 +49,8 @@ include("connection.php");
 
         <div class="container">
         <h1 align="center">Insert Product</h1><br><br><br><br>
-        <form action="" method="post" enctype="multipart/form-data">
-        <table class="table">
+        <form action="" metdod="post" enctype="multipart/form-data">
+        <table class="table" id="customers">
                       <tr>
                       	<td>Name</td>
                       	<td><input type="text" name="name" placeholder="Enter Product Name" class="form-control" required="required"></td>

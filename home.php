@@ -7,8 +7,11 @@ include("connection.php");
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
 	<meta name="viewport" content="width=device-width" />
 	<title>Digit Electronics</title>
+<!-- owl carousel css file cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+	<link rel="stylesheet" href="css/style.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <link rel="stylesheet" href="css/style.css">
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
 	
 </head>
@@ -27,38 +30,77 @@ include("connection.php");
 		
        <div class="container">
         <div class="container" style="background: red; color: white;"> <!--contener start -->
-								<div class="row">  <!-- row start -->
-
+								
 								<div class="col-sm-12 mymanu">
 								<nav class="navbar ">
 								<div class="navbar-header">
 								
 								</div>
-								<div id="mystyle">
-								    <ul class="nav navbar-nav">
-									<li><a href="home.php"><font color="white">Home</a></font></li>
-								<li><a href="index.php" class="active"><font color="white">Products</font></a></li>
-								<li><a href="aboutus.php"><font color="white">About Us</font></a></li>
-								<li><a href="contact.php"><font color="white">Contact Us</font></a></li>
-								<li><a href="reviews.php"><font color="white">Reviews</a></font></li>
-								</ul>
+								
+								     <center><h1 style="color:white;font-size:40px;"><font face ="Corbel">Home Page</h1></font></center>
 								<div>
 								</nav>
-								</div>
-								</div> <!-- row End -->
+								
+							
 								</div> <!-- contener end -->
         </div>
-		<br><br>
-	
-					
-				</div>
-                </div> 
+
+		<div class="container">
+<section class="home" id="home">
+<br>
+<div class="home-slider owl-carousel">
+<div class="item">
+        <img src="img/home_img2.jpg" alt="">
+        <div class="content">
+            <h3>See our Products</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, neque.</p>
+            <a href="index.php"><button class="btn">Discover</button></a>
+        </div>
+    </div>
+    <div class="item">
+        <img src="img/home_img2.jpg" alt="">
+        <div class="content">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, neque.</p>
+            <a href="aboutus.php"><button class="btn">Discover</button></a>
+        </div>
+    </div>
+
+  
+
+    <div class="item">
+        <img src="img/home_img2.jpg" alt="">
+        <div class="content">
+            <h3>Contact Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, neque.</p>
+            <a href="contact.php"><button class="btn">Discover</button></a>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="img/home_img2.jpg" alt="">
+        <div class="content">
+            <h3>Reviews</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, neque.</p>
+            <a href="reviews.php"><button class="btn">Discover</button></a>
+        </div>
+    </div>
+
+</div>
+
+</section></div>
 				<br>
 				<div class="container" style="background-color: red;color: white">
 			<h2 align="center">© Copyright 2021 DigitElectronics</h2>
 			</div>
-			
-	</div>
+			</div>
 	
+	<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- owl carousel js file cdn link  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"/></script>
+<!-- custom js file link  -->
+<script src="js/index.js"></script>
 </body>
 </html>

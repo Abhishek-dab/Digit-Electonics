@@ -9,7 +9,7 @@ include("connection.php");
 	<title>Digit Electronics</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
-	
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
