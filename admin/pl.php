@@ -12,7 +12,6 @@ include("connection.php");
 	
 </head>
 <body>
-
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
     <div class="container-fluid">
@@ -34,6 +33,14 @@ include("connection.php");
 								<div class="navbar-header">
 								
 								</div>
+								<div id="mystyle">
+								    <ul class="nav navbar-nav">
+								<li><a href="ahome.php" class="active"><font color="white">Home</font></a></li>
+								<li><a href="product.php"><font color="white">Product</font></a></li>
+								<li><a href="sell.php"><font color="white">Orders List</font></a></li>
+								<li><a href="index.php"><font color="white">Log Out</a></font></li>
+								</ul>
+								<div>
 								</nav>
 								</div>
 								</div> <!-- row End -->
@@ -41,40 +48,37 @@ include("connection.php");
         </div>
 
         <div class="container">
-        <h1>Owner Login</h1><br><br>
-				<form action="" method="post">
-				<table class="table">
-					<tr> 
-					<td>Enter Username</td>
-					<td><input type="text" name="un" placeholder="Enter Username" class="form-control" required="required"></td>
-				    </tr>
-				    <tr>
-					<td>Enter Password</td>
-					<td><input type="password" name="ps" placeholder="Enter Password" class="form-control" required="required"></td>
-				    </tr>
-				    <tr>
-				    	<td colspan="2"><input type="submit" name="sub" value="Login" class="btn btn-primary"></td>
-				    </tr>
+        <h1>Products List</h1><br><br>
+        <table class="table">
+                 <tr>
+                 <td>Product Name</td>
+                      <td>Brand</td>
+                       <td>Category</td>
+                        <td>Price</td>
+                 </tr>
+                 <?php
+                  $q="select * from product";
+                  $run=mysqli_query($link,$q);
+                  while($row=mysqli_fetch_array($run))
+                  {
+
+                    $name=$row['name'];
+                    $brand=$row['brand'];
+                    $cat=$row['cat'];
+                    $price=$row['price'];
+
+                  ?>
+                  <tr>
+                  <td><?php echo $name; ?></td>
+                  	<td><?php echo $brand; ?></td>
+                  	<td><?php echo $cat; ?></td>
+                  		<td><?php echo $price; ?></td>
+                  
+                  <?php
+                  }
+                 ?>
 				</table>
-			</form><br><br>
-            <?php
-              if(isset($_POST['sub']))
-              {
-              	 $un=$_POST['un'];
-                $ps=$_POST['ps'];
-
-                $q="select * from admin";
-                $run=mysqli_query($link,$q);
-                $row=mysqli_fetch_array($run);
-                 $u=$row['un'];
-                 $p=$row['ps'];
-                if($un==$u && $ps==$p)
-                {
-                       header("Location:ahome.php");
-                }
-
-              }
-			?>
+				
                 </div> 
 				<br><br>
 				<div class="container" style="background-color: red;color: white">

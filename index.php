@@ -35,10 +35,11 @@ include("connection.php");
 								</div>
 								<div id="mystyle">
 								    <ul class="nav navbar-nav">
-								<li><a href="index.php" class="active"><font color="white">Home</font></a></li>
-								<li><a href="#"><font color="white">About Us</font></a></li>
-								<li><a href="#"><font color="white">Contact Us</font></a></li>
-								<li><a href="#"><font color="white">Help</a></font></li>
+									<li><a href="home.php"><font color="white">Home</a></font></li>
+								<li><a href="index.php" class="active"><font color="white">Products</font></a></li>
+								<li><a href="aboutus.php"><font color="white">About Us</font></a></li>
+								<li><a href="contact.php"><font color="white">Contact Us</font></a></li>
+								<li><a href="reviews.php"><font color="white">Reviews</a></font></li>
 								</ul>
 								<div>
 								</nav>

@@ -12,6 +12,7 @@ include("connection.php");
 	
 </head>
 <body>
+
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
     <div class="container-fluid">
@@ -48,7 +49,7 @@ include("connection.php");
         </div>
 
         <div class="container">
-        <h1 align="center">Admin Home</h1><br><br>
+        <h1 align="center">Admin Home</h1><br>
 
             <?php
               if(isset($_POST['sub']))

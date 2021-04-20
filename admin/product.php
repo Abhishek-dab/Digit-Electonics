@@ -48,10 +48,10 @@ include("connection.php");
         </div>
 
         <div class="container">
-        <h1 align="center">Products</h1><br><br><br><br>
+        <h1 align="center">Products</h1>
 
                 <h2><a href="ip.php" style="color: grey;">Insert Product</a></h2>
-				<h2><a href="pl.php" style="color: grey;">Product List</a></h2>
+				<h2><a href="pl.php" style="color: grey;">Products List</a></h2>
                 </div> 
 				<br><br>
 				<div class="container" style="background-color: red;color: white">
