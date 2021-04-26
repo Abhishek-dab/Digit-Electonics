@@ -63,10 +63,10 @@ include("connection.php");
                           <p><a href="watch.php" style="color: white">Watches</a></p><br>
                           <p><a href="tv.php" style="color: white">Televisions</a></p><br></center><br><br>
 				</div>
-				<br><br>
+				<br> <br>
                 <div class="col-sm-10">
 				<?php
-                $d2="Televisions";
+                $d2="Mobile Phones";
                            $q="select * from product where cat like '%$d2%'";
                             $run=mysqli_query($link,$q);
                             while($row=mysqli_fetch_array($run))

@@ -35,10 +35,12 @@ include("connection.php");
 								</div>
 								<div id="mystyle">
 								    <ul class="nav navbar-nav">
-								<li><a href="index.php" class="active"><font color="white">Home</font></a></li>
-								<li><a href="#"><font color="white">About Us</font></a></li>
-								<li><a href="#"><font color="white">Contact Us</font></a></li>
-								<li><a href="#"><font color="white">Help</a></font></li>
+									<li><a href="home.php"><font color="white">Home</a></font></li>
+								<li><a class="active" href="index.php"><font color="white">Products</font></a></li>
+								<li><a href="aboutus.php"><font color="white">About Us</font></a></li>
+								<li><a href="contact.php"><font color="white">Contact Us</font></a></li>
+								<li><a href="reviews.php"><font color="white">Reviews</a></font></li>
+								<li><a href="deals.php"><font color="white">Deals of the week</a></font></li>
 								</ul>
 								<div>
 								</nav>
@@ -61,8 +63,8 @@ include("connection.php");
                           <p><a href="watch.php" style="color: white">Watches</a></p><br>
                           <p><a href="tv.php" style="color: white">Televisions</a></p><br></center><br><br>
 				</div>
-
-                <div class="col-sm-10"><br>
+				<br><br>
+                <div class="col-sm-10">
 				<?php
                 $d2="Apple";
                            $q="select * from product where brand like '%$d2%'";
@@ -75,11 +77,11 @@ include("connection.php");
                             	$img=$row['img'];
                             	$brand=$row['brand'];
                          ?>
-                         <br>  
+                          
 					<div class="col-sm-4"><center><?php echo "<img src='admin/c/$img' width='150px' height='150px'>"; ?></center>
 						<h4 align="center"><?php echo $brand; ?></h4>
 						<h5 align="center"><?php echo $name; ?></h5>
-						<center><a href="b.php?id=<?php echo $id; ?>" class="btn btn-primary">Buy Now</a></center>
+						<center><a href="b.php?id=<?php echo $id; ?>" class="btn btn-primary">Buy Now</a></center><br><br>
 					</div>
 					<?php
                     }

@@ -4,6 +4,7 @@ include("connection.php");
 <!DOCTYPE html>
 <html>
 <head>
+    
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
 	<meta name="viewport" content="width=device-width" />
 	<title>Digit Electronics</title>
@@ -36,10 +37,12 @@ include("connection.php");
 								</div>
 								<div id="mystyle">
 								    <ul class="nav navbar-nav">
-								<li><a href="index.php" class="active"><font color="white">Home</font></a></li>
+                    <li><a href="home.php"><font color="white">Home</a></font></li>
+								<li><a class="active" href="index.php"><font color="white">Products</font></a></li>
 								<li><a href="aboutus.php"><font color="white">About Us</font></a></li>
 								<li><a href="contact.php"><font color="white">Contact Us</font></a></li>
-								<li><a href="#"><font color="white">Help</a></font></li>
+								<li><a href="reviews.php"><font color="white">Reviews</a></font></li>
+								<li><a href="deals.php"><font color="white">Deals of the week</a></font></li>
 								</ul>
 								<div>
 								</nav>
@@ -52,20 +55,21 @@ include("connection.php");
                           
 					<section class="contact-us flex">
                     <div class="contact-info-wrapper">
-                        <h1 class="section-heading">Contact us</h1>
+                    <h1 class="heading" ><font face ="Corbel"> <span>Contact Us</span></font> </h1>
+
                         <div class="contact-info">
                             <div>
                                 <div>
                                    
                                     <div>
                                         <span>Call us:</span>
-                                        <span>+91 9999999</span>
+                                        <span>+91 999999899</span>
                                     </div>
                                 </div>
                                 <div>
                                    
                                     <div>
-                                        <span>E-mail ::</span>
+                                        <span>E-mail:</span>
                                         <span>cs@digitelec.com</span>
                                     </div>
                                 </div>
@@ -88,10 +92,82 @@ include("connection.php");
 					
 				</div>
                 </div> 
+<br><br>
+     <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Query / Contact Form</h1>
+          </div>
+          <div class="panel-body">
+            <form method="post">
+              <div class="form-group">
+                <label for="firstName">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your mail"
+                />
+              </div>
+             
+              <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number"
+                  placeholder="Enter your number"
+                  name="number"
+                />
+              </div>
+              <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control py-3" id="message" name="message" type="text" placeholder="Enter your message..." rows="6"></textarea></div>
+                               
+              <input type="submit" name ="sub" class="btn btn-primary" />
+            </form>
+          </div>
+          <div class="panel-footer text-right">
+            <small>&copy; Digit</small>
+          </div>
+        </div>
+      </div>
+    </div>
+              <?php
+              if(isset($_POST['sub']))
+              {
+            $firstName = $_POST['firstName'];
+              $email = $_POST['email'];
+            $number = $_POST['number'];
+              $message = $_POST['message'];
+
+            if(mysqli_query($link,"insert into contact(firstName, email, number, message)  values('$firstName','$email','$number','$message')"))
+                            {
+                                  echo "<script>alert('Query submitted successfully')</script>";
+                            }
+                            else
+                            {
+                              echo "<script>alert('Data Not Save')</script>";
+                            }
+              }
+            
+              ?>
 				<br>
 				<div class="container" style="background-color: red;color: white">
 			<h2 align="center">© Copyright 2021 DigitElectronics</h2>
-			</div>
+		</div>
 			
 	</div>
 	

@@ -9,7 +9,7 @@ include("connection.php");
 	<title>Digit Electronics</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
-	
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -27,23 +27,25 @@ include("connection.php");
 		
        <div class="container">
         <div class="container" style="background: red; color: white;"> <!--contener start -->
-								<div class="row">  <!-- row start -->
-
-								<div class="col-sm-12 mymanu">
+								
+		<div class="col-sm-12 mymanu">
 								<nav class="navbar ">
 								<div class="navbar-header">
 								
 								</div>
+								
+								     <center><h1 style="color:white;font-size:40px;"><font face ="Corbel">Admin Page</h1></font></center>
+								<div>
 								</nav>
-								</div>
-								</div> <!-- row End -->
-								</div> <!-- contener end -->
+								
+							
+								</div><!-- contener end -->
         </div>
 
         <div class="container">
         <h1>Owner Login</h1><br><br>
 				<form action="" method="post">
-				<table class="table">
+				<table class="table" id="customers">
 					<tr> 
 					<td>Enter Username</td>
 					<td><input type="text" name="un" placeholder="Enter Username" class="form-control" required="required"></td>
@@ -71,7 +73,10 @@ include("connection.php");
                 if($un==$u && $ps==$p)
                 {
                        header("Location:ahome.php");
-                }
+                }else
+				{
+					echo "<script>alert('Incorrect Login Info')</script>";
+				}
 
               }
 			?>

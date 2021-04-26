@@ -35,11 +35,13 @@ include("connection.php");
 								</div>
 								<div id="mystyle">
 								    <ul class="nav navbar-nav">
-								<li><a href="ahome.php" class="active"><font color="white">Home</font></a></li>
+                                    <li><a href="ahome.php" class="active"><font color="white">Home</font></a></li>
 								<li><a href="product.php"><font color="white">Product</font></a></li>
 								<li><a href="sell.php"><font color="white">Orders List</font></a></li>
-								<li><a href="index.php"><font color="white">Log Out</a></font></li>
-								</ul>
+                                <li><a href="contacts.php"><font color="white">Contact Form</a></font></li>
+                                <li><a href="subs.php"><font color="white">News Letter Subscriptions</a></font></li>
+                               <li><a href="index.php"><font color="white">Log Out</a></font></li>
+                               </ul>
 								<div>
 								</nav>
 								</div>
@@ -49,12 +51,12 @@ include("connection.php");
 
         <div class="container">
         <h1>Products List</h1><br><br>
-        <table class="table">
+        <table class="table" id="customers">
                  <tr>
-                 <td>Product Name</td>
-                      <td>Brand</td>
-                       <td>Category</td>
-                        <td>Price</td>
+                 <th>Product Name</th>
+                      <th>Brand</th>
+                       <th>Category</th>
+                        <th>Price</th>
                  </tr>
                  <?php
                   $q="select * from product";

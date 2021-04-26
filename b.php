@@ -9,7 +9,7 @@ include("connection.php");
 	<title>Digit Electronics</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
-	
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -35,10 +35,12 @@ include("connection.php");
 								</div>
 								<div id="mystyle">
 								    <ul class="nav navbar-nav">
-								<li><a href="index.php" class="active"><font color="white">Home</font></a></li>
-								<li><a href="#"><font color="white">About Us</font></a></li>
-								<li><a href="#"><font color="white">Contact Us</font></a></li>
-								<li><a href="#"><font color="white">Help</a></font></li>
+									<li><a href="home.php"><font color="white">Home</a></font></li>
+								<li><a class="active" href="index.php"><font color="white">Products</font></a></li>
+								<li><a href="aboutus.php"><font color="white">About Us</font></a></li>
+								<li><a href="contact.php"><font color="white">Contact Us</font></a></li>
+								<li><a href="reviews.php"><font color="white">Reviews</a></font></li>
+								<li><a href="deals.php"><font color="white">Deals of the week</a></font></li>
 								</ul>
 								<div>
 								</nav>
@@ -56,9 +58,9 @@ include("connection.php");
                           <p><a href="xiaomi.php" style="color: white">Xiaomi</a></p></center>
 
 					<h1 align="center">Category</h1> <br>
-                         <center>  <p><a href="laptops.php" style="color: white">Laptops</a></p><br>
-                         <p><a href="phones.php" style="color: white">Mobile Phones</a></p><br>
-                          <p><a href="watches.php" style="color: white">Watches</a></p><br>
+                         <center>  <p><a href="laptop.php" style="color: white">Laptops</a></p><br>
+                         <p><a href="phone.php" style="color: white">Mobile Phones</a></p><br>
+                          <p><a href="watch.php" style="color: white">Watches</a></p><br>
                           <p><a href="tv.php" style="color: white">Televisions</a></p><br></center><br><br>
 				</div>
 
@@ -78,14 +80,14 @@ include("connection.php");
                          ?>
                            <br>
 					<div class="col-sm-4"><center><?php echo "<img src='admin/c/$img' width='150px' height='150px'>"; ?></center>
-                    <h4 align="center">Brand :<?php echo $brand; ?></h4>
-						<h4 align="center">Product :<?php echo $name; ?></h4>
+                    <h4 align="center">Brand: <?php echo $brand; ?></h4>
+						<h4 align="center">Product: <?php echo $name; ?></h4>
                         <h4 align="center">Price : ₹ <?php echo $price; ?>.00</h4><br>
                         
 					</div>
                    
                     <form action="" method="post">
-					<table class="table">
+					<table class="table" id="customers">
                    
 						<tr>
 							<td>Enter Name</td>
@@ -129,7 +131,7 @@ include("connection.php");
 
                  	if(mysqli_query($link,"insert into sell(pname,brand,cat,price,name,add1,city,state,mno,pin) values('$name','$brand','$cat','$price','$n1','$add1','$city','$state','$mno','$pin')"))
                  	{
-                 		echo "<script>alert('Data Save')</script>";
+                 		echo "<script>alert('Purchase Successful')</script>";
                  	}
                  	else
                  	{

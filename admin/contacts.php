@@ -4,16 +4,12 @@ include("connection.php");
 <!DOCTYPE html>
 <html>
 <head>
- <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
 	<meta name="viewport" content="width=device-width" />
 	<title>Digit Electronics</title>
-<!-- owl carousel css file cdn link  -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-
-	<link rel="stylesheet" href="css/style.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
-	
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -39,13 +35,13 @@ include("connection.php");
 								</div>
 								<div id="mystyle">
 								    <ul class="nav navbar-nav">
-									<li><a href="ahome.php" class="active"><font color="white">Home</font></a></li>
+								<li><a href="ahome.php" class="active"><font color="white">Home</font></a></li>
 								<li><a href="product.php"><font color="white">Product</font></a></li>
 								<li><a href="sell.php"><font color="white">Orders List</font></a></li>
                                 <li><a href="contacts.php"><font color="white">Contact Form</a></font></li>
                                 <li><a href="subs.php"><font color="white">News Letter Subscriptions</a></font></li>
                                <li><a href="index.php"><font color="white">Log Out</a></font></li>
-                               </ul>
+                                </ul>
 								<div>
 								</nav>
 								</div>
@@ -53,41 +49,41 @@ include("connection.php");
 								</div> <!-- contener end -->
         </div>
 
-		<div class="container">
-<section class="home" id="home">
-<br>
-<div class="home-slider owl-carousel">
-<div class="item">
-        <img src="img/home_img4.jpg" alt="">
-        <div class="content">
-            <h3>Products List</h3>
-            <p>See products which are already added</p>
-            <a href="pl.php"><button class="btn">See now</button></a>
-        </div>
-    </div>
-<div class="item">
-        <img src="img/rev.jpg" alt="">
-        <div class="content">
-            <h3>Insert Products</h3>
-            <p>Add new products which the customers can buy</p>
-            <a href="ip.php"><button class="btn">Add now</button></a>
-        </div>
-    </div>
-   
-</div>
+        <div class="container">
+        <h1>Contact Form Messages</h1><br><br>
+        <table class="table" id="customers">
+                 <tr>
+                     <th>Name</th>
+                      <th>E-Mail</th>
+                       <th>Number</th>
+                        <th>Message</th>
+                 </tr>
+                 <?php
+                  $q="select * from contact";
+                  $run=mysqli_query($link,$q);
+                  while($row=mysqli_fetch_array($run))
+                  {
 
-</section></div>
-				<br>
+                       $firstName=$row['firstName'];
+                       $email=$row['email'];
+                       $number=$row['number'];
+                       $message=$row['message'];
+                       ?>
+                  <tr>
+                  	<td><?php echo $firstName; ?></td>
+                  	<td><?php echo $email; ?></td>
+                  	<td><?php echo $number; ?></td>
+                  	<td><?php echo $message; ?></td>
+                  <?php
+                  }
+                 ?>
+				</table>
+				
+                </div> 
+				<br><br>
 				<div class="container" style="background-color: red;color: white">
 			<h2 align="center">© Copyright 2021 DigitElectronics</h2>
 				</div></div>
-
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-	<!-- owl carousel js file cdn link  -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"/></script>
-<!-- custom js file link  -->
-<script src="js/index.js"></script>
 </body>
 </html>
 

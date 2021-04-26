@@ -66,7 +66,7 @@ include("connection.php");
 				<br><br>
                 <div class="col-sm-10">
 				<?php
-                $d2="Televisions";
+                $d2="Watches";
                            $q="select * from product where cat like '%$d2%'";
                             $run=mysqli_query($link,$q);
                             while($row=mysqli_fetch_array($run))
@@ -77,11 +77,11 @@ include("connection.php");
                             	$img=$row['img'];
                             	$brand=$row['brand'];
                          ?>
-                          
+                           
 					<div class="col-sm-4"><center><?php echo "<img src='admin/c/$img' width='150px' height='150px'>"; ?></center>
 						<h4 align="center"><?php echo $brand; ?></h4>
 						<h5 align="center"><?php echo $name; ?></h5>
-						<center><a href="b.php?id=<?php echo $id; ?>" class="btn btn-primary">Buy Now</a></center> <br> <br>
+						<center><a href="b.php?id=<?php echo $id; ?>" class="btn btn-primary">Buy Now</a></center><br><br>
 					</div>
 					<?php
                     }

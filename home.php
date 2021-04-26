@@ -53,15 +53,15 @@ include("connection.php");
         <img src="img/home_img2.jpg" alt="">
         <div class="content">
             <h3>See our Products</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, neque.</p>
+            <p>You will be able to find a wide selection of electronics from top brands</p>
             <a href="index.php"><button class="btn">Discover</button></a>
         </div>
     </div>
     <div class="item">
-        <img src="img/home_img2.jpg" alt="">
+        <img src="img/about-us.jpeg" alt="">
         <div class="content">
             <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, neque.</p>
+            <p >Know more about us</p>
             <a href="aboutus.php"><button class="btn">Discover</button></a>
         </div>
     </div>
@@ -69,20 +69,28 @@ include("connection.php");
   
 
     <div class="item">
-        <img src="img/home_img2.jpg" alt="">
+        <img src="img/home_img4.jpg" alt="">
         <div class="content">
             <h3>Contact Us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, neque.</p>
-            <a href="contact.php"><button class="btn">Discover</button></a>
+            <p>Ways to reach out to us</p>
+            <a href="contact.php"><button class="btn">Contact Now</button></a>
         </div>
     </div>
 
     <div class="item">
-        <img src="img/home_img2.jpg" alt="">
+        <img src="img/home_img1.jpg" alt="">
         <div class="content">
             <h3>Reviews</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, neque.</p>
+            <p>See reviews from different news outlets</p>
             <a href="reviews.php"><button class="btn">Discover</button></a>
+        </div>
+    </div>
+    <div class="item">
+        <img src="img/rev.jpg" alt="">
+        <div class="content">
+            <h3>Deals of the week</h3>
+            <p>Discounted products only available for this week</p>
+            <a href="deals.php"><button class="btn">Discover</button></a>
         </div>
     </div>
 

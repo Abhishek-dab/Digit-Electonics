@@ -55,30 +55,45 @@ include("connection.php");
 <br>
 <div class="home-slider owl-carousel">
 <div class="item">
-        <img src="img/home_img1.jpg" alt="">
+        <img src="img/home_img2.jpg" alt="">
         <div class="content">
-            <h3>See our Products</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, neque.</p>
-            <a href="product.php"><button class="btn">Discover</button></a>
+            <h3>Manage Products</h3>
+            <p>Add new products for the customers or see added products</p>
+            <a href="product.php"><button class="btn">Insert Now</button></a>
         </div>
     </div>
     <div class="item">
         <img src="img/home_img1.jpg" alt="">
         <div class="content">
-            <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, neque.</p>
-            <a href="sell.php"><button class="btn">Discover</button></a>
+            <h3>Orders List</h3>
+            <p>See all the orders placed by the customers</p>
+            <a href="sell.php"><button class="btn">See Now</button></a>
         </div>
     </div>
 
-  
+    <div class="item">
+        <img src="img/u.png" alt="">
+        <div class="content">
+            <h3>Messages</h3>
+            <p>See all the messaged sent by customers through contact form</p>
+            <a href="contacts.php"><button class="btn">See Now</button></a>
+        </div>
+    </div>
 
     <div class="item">
-        <img src="img/home_img1.jpg" alt="">
+        <img src="img/about-us.jpeg" alt="">
         <div class="content">
-            <h3>Contact Us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, neque.</p>
-            <a href="index.php"><button class="btn">Discover</button></a>
+            <h3>Subscription List</h3>
+            <p>See customers who have subscribed using their emails </p>
+            <a href="subs.php"><button class="btn">See Now</button></a>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="img/home_img4.jpg" alt="">
+        <div class="content">
+            <h3>Log Out</h3>
+            <a href="index.php"><button class="btn">Log out</button></a>
         </div>
     </div>
 

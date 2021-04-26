@@ -7,6 +7,7 @@ include("connection.php");
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
 	<meta name="viewport" content="width=device-width" />
 	<title>Digit Electronics</title>
+
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
 	
@@ -36,11 +37,11 @@ include("connection.php");
 								<div id="mystyle">
 								    <ul class="nav navbar-nav">
 									<li><a href="home.php"><font color="white">Home</a></font></li>
-								<li><a href="index.php" class="active"><font color="white">Products</font></a></li>
+								<li><a class="active" href="index.php"><font color="white">Products</font></a></li>
 								<li><a href="aboutus.php"><font color="white">About Us</font></a></li>
 								<li><a href="contact.php"><font color="white">Contact Us</font></a></li>
 								<li><a href="reviews.php"><font color="white">Reviews</a></font></li>
-								<li><a href="reviews.php"><font color="white">Deals of the week</a></font></li>
+								<li><a href="deals.php"><font color="white">Deals of the week</a></font></li>
 								</ul>
 								<div>
 								</nav>
@@ -58,13 +59,13 @@ include("connection.php");
                           <p><a href="xiaomi.php" style="color: white">Xiaomi</a></p></center>
 
 					<h1 align="center">Category</h1> <br>
-                         <center>  <p><a href="laptops.php" style="color: white">Laptops</a></p><br>
-                         <p><a href="phones.php" style="color: white">Mobile Phones</a></p><br>
-                          <p><a href="watches.php" style="color: white">Watches</a></p><br>
+                         <center>  <p><a href="laptop.php" style="color: white">Laptops</a></p><br>
+                         <p><a href="phone.php" style="color: white">Mobile Phones</a></p><br>
+                          <p><a href="watch.php" style="color: white">Watches</a></p><br>
                           <p><a href="tv.php" style="color: white">Televisions</a></p><br></center><br><br>
 				</div>
-
-                <div class="col-sm-10"><br>
+<br><br>
+                <div class="col-sm-10">
 				<?php
                             $q="select * from product limit 0,6";
                             $run=mysqli_query($link,$q);
@@ -80,7 +81,7 @@ include("connection.php");
 					<div class="col-sm-4"><center><?php echo "<img src='admin/c/$img' width='150px' height='150px'>"; ?></center>
 						<h4 align="center"><?php echo $brand; ?></h4>
 						<h5 align="center"><?php echo $name; ?></h5>
-						<center><a href="b.php?id=<?php echo $id; ?>" class="btn btn-primary">Buy Now</a></center>
+						<center><a href="b.php?id=<?php echo $id; ?>" class="btn btn-primary">Buy Now</a></center><br><br>
 					</div>
 					<?php
                     }

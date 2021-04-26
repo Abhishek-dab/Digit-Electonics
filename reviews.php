@@ -37,12 +37,13 @@ include("connection.php");
 								</div>
 								<div id="mystyle">
 								    <ul class="nav navbar-nav">
-									<li><a href="home.php"><font color="white">Home</a></font></li>
-								<li><a href="index.php" class="active"><font color="white">Products</font></a></li>
+                                    <li><a href="home.php"><font color="white">Home</a></font></li>
+								<li><a class="active" href="index.php"><font color="white">Products</font></a></li>
 								<li><a href="aboutus.php"><font color="white">About Us</font></a></li>
 								<li><a href="contact.php"><font color="white">Contact Us</font></a></li>
 								<li><a href="reviews.php"><font color="white">Reviews</a></font></li>
-								</ul>
+								<li><a href="deals.php"><font color="white">Deals of the week</a></font></li>
+									</ul>
 								<div>
 								</nav>
 								</div>
@@ -50,40 +51,40 @@ include("connection.php");
 								</div> <!-- contener end -->
         </div>
 		<br><br>
-	
+        <center><h1 class="heading" ><font face ="Corbel"> <span>Reviews from news outlets</span></font> </h1></center>
 	
         <div class="container">
     <section class="testimonial" id="testimonial">
         <div class="content">
         <div class="content">
             <div class="testimonialBx">
-                <p>Praveen did an excellent creative job, addressing our request quickly, and also providing his own graphic insight, being open to feedback and changes or edits when they arose. He worked with us the entire way. Highly recommended.</p>
+                <p>Best E-commerce site in India and anyone can and should trust Digit. You will always get deliveries on time and with proper pakaging. Only issue is its app and we can easily bear with it..</p>
                 <br><span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-                <h3>Richard Wilson<br>Creative Designer</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <h3>Mr. Richard Wilson<br>The Hindustan news</h3>
             </div>
             <div class="testimonialBx">
-                <p>I've been Searching for a good Portfolio Website done on html & css. This is definitely the one simple about myself with Responsive Design.  Thanks Praveen</p> 
+                <p>Costomer Service : - Great, it offers you the best costomer service on any e-commerce platform. They have their costomer staff readily available for you at any time. Their costomer service staff is respectful and paitient.</p> 
                 <br><span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<h3>Joyce K<br>Web Designer (google)</h3>
-                
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <h3>Mrs. Joyce K<br>The Times paper</h3>
+                                    
                 
             </div>
             <div class="testimonialBx">
-                <p>I've been Searching for a good Portfolio Website done on html & css. This is definitely the one simple about myself with Responsive Design.  Thanks Praveen</p>
+                <p>Product Quality : - Now DigitElectronics is not totally responsible for this thing but they can surely improve the quality of products that are available on Digit. When ever we search for something the first recommendation are poor quality and cheap products. Also variety of products is less.</p>
                 <br><span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-                <h3>Joyce K<br>Web Designer (google)</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <h3>Mr Raut Kiran<br>The India paper</h3>
             </div>
             
         </div>
@@ -91,13 +92,12 @@ include("connection.php");
 
 
     </div>
-                </div> 
+            </div> 
 				<br>
-				<div class="container" style="background-color: red;color: white">
+			<div class="container" style="background-color: red;color: white">
 			<h2 align="center">© Copyright 2021 DigitElectronics</h2>
 			</div>
-			
-	</div>
+			</div>
 					
 			
 </body>

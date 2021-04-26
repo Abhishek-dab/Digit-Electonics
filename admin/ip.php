@@ -7,9 +7,10 @@ include("connection.php");
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
 	<meta name="viewport" content="widtd=device-widtd" />
 	<title>Digit Electronics</title>
+	<link rel="stylesheet" href="css/style.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
-	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -35,11 +36,13 @@ include("connection.php");
 								</div>
 								<div id="mystyle">
 								    <ul class="nav navbar-nav">
-								<li><a href="ahome.php" class="active"><font color="white">Home</font></a></li>
+									<li><a href="ahome.php" class="active"><font color="white">Home</font></a></li>
 								<li><a href="product.php"><font color="white">Product</font></a></li>
 								<li><a href="sell.php"><font color="white">Orders List</font></a></li>
-								<li><a href="index.php"><font color="white">Log Out</a></font></li>
-								</ul>
+                                <li><a href="contacts.php"><font color="white">Contact Form</a></font></li>
+                                <li><a href="subs.php"><font color="white">News Letter Subscriptions</a></font></li>
+                               <li><a href="index.php"><font color="white">Log Out</a></font></li>
+                               </ul>
 								<div>
 								</nav>
 								</div>
@@ -48,8 +51,8 @@ include("connection.php");
         </div>
 
         <div class="container">
-        <h1 align="center">Insert Product</h1><br><br><br><br>
-        <form action="" metdod="post" enctype="multipart/form-data">
+        <h1>Insert Product</h1><br><br>
+        <form action="" method="post" enctype="multipart/form-data"> 
         <table class="table" id="customers">
                       <tr>
                       	<td>Name</td>
@@ -86,13 +89,13 @@ include("connection.php");
                       	<td><input type="text" name="price" placeholder="Enter Price" class="form-control" required="required"></td>
                       </tr>
                          <tr>
-                      	<td colspan="2"><input type="submit" name="sub" value="Save"></td>
+                      	<td colspan="2"><input type="submit" name="sub" value="Save" class="btn btn-primary"></td>
                       	
                       </tr>
 
 				</table>
                 </form>
-			<?php
+				<?php
              if(isset($_POST['sub']))
              {
              	$name=$_POST['name'];
@@ -106,7 +109,7 @@ include("connection.php");
 
 	        if(mysqli_query($link,"insert into product (name,cat,brand,price,img) value('$name','$cat','$brand','$price','$image')"))
 	        {
-	        	  echo "<script>alert('Data Save')</script>";
+	        	  echo "<script>alert('New Product Inserted')</script>";
 	        }
 	        else
 	        {

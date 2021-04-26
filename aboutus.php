@@ -36,11 +36,13 @@ include("connection.php");
 								</div>
 								<div id="mystyle">
 								    <ul class="nav navbar-nav">
-								<li><a href="index.php" class="active"><font color="white">Home</font></a></li>
-								<li><a href="#"><font color="white">About Us</font></a></li>
+									<li><a href="home.php"><font color="white">Home</a></font></li>
+								<li><a class="active" href="index.php"><font color="white">Products</font></a></li>
+								<li><a href="aboutus.php"><font color="white">About Us</font></a></li>
 								<li><a href="contact.php"><font color="white">Contact Us</font></a></li>
-								<li><a href="#"><font color="white">Help</a></font></li>
-								</ul>
+								<li><a href="reviews.php"><font color="white">Reviews</a></font></li>
+								<li><a href="deals.php"><font color="white">Deals of the week</a></font></li>
+									</ul>
 								<div>
 								</nav>
 								</div>
@@ -53,52 +55,55 @@ include("connection.php");
        
                             <div>
                          
-                                <h1 class="h-primary align="center">About us</h1>
+                            <center><h1 class="heading" ><font face ="Corbel"> <span>About Us</span></font> </h1></center><br>
+
                             <div class="service-card magic-shadow-sm">
 								<center>
                                 <p class="lead" ><font color="black">We are one of the most trusted online store in India for all kinds of Electronic products.</font></p>
                                 <font color="white"><p>Launched in 2006, Digit Electronice was the first one-of-its kind large format specialist retail store that catered to all multi-brand digital gadgets and home electronic needs in India.</p> <p>Over a decade since its inception, Digit has almost become synonyms for all electronics needs, with its tech-savvy staff, product range, Staged presence and the will to help customers.</p>
 
-<p>Bringing alive the promise of a ‘Brighter Every Day’ for its customers, Digit offers its customers a world-class ambience to shop both in-store and Staged at website and also allows for a seamless ‘omni-channel’ shopping experience that lets a customer enjoy the best of both the Staged & the offline worlds.</p> <p>With over 6000 products across 200 brands and 150+ stores across 40+ major cities of India, We ensures that for each customer, a Brighter Tomorrow begins Today! From the newlywed couple setting up their house to the son reducing his mother’s burden with a washing machine; from the daughter gifting her parents a new LED TV to the newly promoted manager buying an inverter air-conditioner to make the summer bearable, 
-	We ensure that customers always get ‘More for their money’!</p></font></center>
-						     </div> </div>
-                             
+                        <p>Bringing alive the promise of a ‘Brighter Every Day’ for its customers, Digit offers its customers a world-class ambience to shop both in-store and Staged at website and also allows for a seamless ‘omni-channel’ shopping experience that lets a customer enjoy the best of both the Staged & the offline worlds.</p> <p>With over 6000 products across 200 brands and 150+ stores across 40+ major cities of India, We ensures that for each customer, a Brighter Tomorrow begins Today! From the newlywed couple setting up their house to the son reducing his mother’s burden with a washing machine; from the daughter gifting her parents a new LED TV to the newly promoted manager buying an inverter air-conditioner to make the summer bearable, 
+                            We ensure that customers always get ‘More for their money’!</p></font></center>
+                                                    </div> </div>
+                                                    
                           </section>   
 
                         </div>
 
 						<section class="our-services">
                     <div class="container" >
-                        <h1 class="h-primary align="center">Our services</h1>
+                    <center><h1 class="heading" ><font face ="Corbel"> <span>Our services</span></font> </h1></center><br>
+
                         <div class="-wrapper flex">
                             <div class="service-card magic-shadow-sm">
                               
                                 <h3>Free Home delivery</h3>
                                 <font color="white"> <p>Hassle-free Home Delivery options
 
-We deliver to 25 cities across India and maintain excellent delivery times, ensuring that all your products from our store reach you in time.</p>
-                                </font>
-                            </div>
-                            <div class="service-card magic-shadow-sm">
-                               
-                                <h3>30 Days Return</h3>
-                                <font color="white"><p>Most items purchased from our website are returnable within the return window, except those that are explicitly identified as not returnable</p>
-                                </font>
-                            </div>
-                            <div class="service-card magic-shadow-sm">
-                               
-                                <h3>Money Back Guaranted</h3>
-                                <font color="white"> <p>Our Money Back Guarantee applies to virtually everything on our site, and
-there's no extra fee for coverage. It’s automatic and covers your purchase price plus
-original shipping on eligible purchases.</p></font>
-                                
-                            </div>
-                        </div>
+                                We deliver to 25 cities across India and maintain excellent delivery times, ensuring that all your products from our store reach you in time.</p>
+                                                                </font>
+                                                            </div>
+                                                            <div class="service-card magic-shadow-sm">
+                                                            
+                                                                <h3>30 Days Return</h3>
+                                                                <font color="white"><p>Most items purchased from our website are returnable within the return window, except those that are explicitly identified as not returnable</p>
+                                                                </font>
+                                                            </div>
+                                                            <div class="service-card magic-shadow-sm">
+                                                            
+                                                                <h3>Money Back Guaranted</h3>
+                                                                <font color="white"> <p>Our Money Back Guarantee applies to virtually everything on our site, and
+                                                            there's no extra fee for coverage. It’s automatic and covers your purchase price plus
+                                                            original shipping on eligible purchases.</p></font>
+                                                                                            
+                         </div>
+                   </div>
                     </div>
                 </section>
         <section id="client-section">
 			<br>
-        <h1 class="h-primary align="center">Our Brands</h1>
+            <center><h1 class="heading" ><font face ="Corbel"> <span>Our Brands</span></font> </h1></center>
+
         <div id="clients">
             <div class="client-item">
                 <img src="img/logo1.png" alt="Our Client">
